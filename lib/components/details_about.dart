@@ -14,35 +14,47 @@ class DetailsAbout extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text("Pokédex Data",
-              style: TextStyle(
-                color: ColorBasedOnType()
-                    .colorBasedOnType(pokemon.types[0]['type']['name']),
-                fontSize: 18,
-                fontWeight: FontWeight.w600,
-              )),
+          Text(
+            "Pokédex Data",
+            style: TextStyle(
+              color: ColorBasedOnType()
+                  .colorBasedOnType(pokemon.types[0]['type']['name']),
+              fontSize: 18,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
           Padding(
-            padding: const EdgeInsets.only(top: 15, bottom: 5),
+            padding: const EdgeInsets.only(
+              top: 15,
+              bottom: 5,
+            ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text("Height",
-                    style: TextStyle(
-                      color: Colors.black,
-                    )),
+                Text(
+                  "Height",
+                  style: TextStyle(
+                    color: Colors.black,
+                  ),
+                ),
                 Text("${pokemon.height}"),
               ],
             ),
           ),
           Padding(
-            padding: const EdgeInsets.only(top: 5, bottom: 5),
+            padding: const EdgeInsets.only(
+              top: 5,
+              bottom: 5,
+            ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text("Weight",
-                    style: TextStyle(
-                      color: Colors.black,
-                    )),
+                Text(
+                  "Weight",
+                  style: TextStyle(
+                    color: Colors.black,
+                  ),
+                ),
                 Text("${pokemon.weight}"),
               ],
             ),
@@ -52,15 +64,18 @@ class DetailsAbout extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text("Abilities",
-                    style: TextStyle(
-                      color: Colors.black,
-                    )),
+                Text(
+                  "Abilities",
+                  style: TextStyle(
+                    color: Colors.black,
+                  ),
+                ),
                 Column(
                   children: [
                     for (var ability in pokemon.abilities)
                       Text(
-                          "${ability['ability']['name'][0].toUpperCase()}${ability['ability']['name'].substring(1)}"),
+                        "${ability['ability']['name'][0].toUpperCase()}${ability['ability']['name'].substring(1)}",
+                      ),
                   ],
                 ),
               ],
