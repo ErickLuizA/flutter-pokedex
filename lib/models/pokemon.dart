@@ -37,31 +37,3 @@ class Pokemon {
     );
   }
 }
-
-// class PokemonType {
-//   int slot;
-//   NameUrl type;
-
-//   PokemonType({this.slot, this.type});
-
-//   factory PokemonType.fromJson(Map<String, dynamic> json) {
-//     return PokemonType(
-//       slot: json['slot'],
-//       type: json['type'],
-//     );
-//   }
-// }
-
-// class NameUrl {
-//   String name;
-//   String url;
-
-//   NameUrl({this.name, this.url});
-
-//   factory NameUrl.fromJson(Map<String, dynamic> json) {
-//     return NameUrl(
-//       name: json['name'],
-//       url: json['url'],
-//     );
-//   }
-// }

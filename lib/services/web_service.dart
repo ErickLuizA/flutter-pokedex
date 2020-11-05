@@ -4,7 +4,7 @@ import 'dart:convert';
 import '../models/pokemon_list.dart';
 
 class WebService {
-  Future<List<PokemonList>> fetchPokemonList() async {
+  Future<List<PokemonList>> getPokemonList() async {
     final url = "https://pokeapi.co/api/v2/pokemon";
     final response = await http.get(url);
 
@@ -19,7 +19,7 @@ class WebService {
     }
   }
 
-  fetchPokemon(String name) async {
+  getPokemon(String name) async {
     final url = "https://pokeapi.co/api/v2/pokemon/$name";
     final response = await http.get(url);
 
