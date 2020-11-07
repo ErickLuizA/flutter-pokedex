@@ -4,8 +4,8 @@ import 'dart:convert';
 import '../models/pokemon_list.dart';
 
 class WebService {
-  Future<List<PokemonList>> getPokemonList() async {
-    final url = "https://pokeapi.co/api/v2/pokemon";
+  Future<List<PokemonList>> getPokemonList(offset) async {
+    final url = "https://pokeapi.co/api/v2/pokemon?offset=$offset&limit=20";
     final response = await http.get(url);
 
     if (response.statusCode == 200) {

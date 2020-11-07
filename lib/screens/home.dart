@@ -45,6 +45,7 @@ class _HomeState extends State<Home> {
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
               "Pokédex",
@@ -96,11 +97,19 @@ class _HomeState extends State<Home> {
                 ],
               ),
             ),
+            if (viewModel.getPokemonLoading)
+              Center(
+                child: CircularProgressIndicator(),
+              ),
             viewModel.searchedPokemon != null
                 ? ListItem(viewModel.searchedPokemon)
-                : Expanded(
-                    child: PokemonList(viewModel.pokemonList),
-                  ),
+                : viewModel.filteredPokemonList != null
+                    ? Expanded(
+                        child: PokemonList(viewModel.filteredPokemonList),
+                      )
+                    : Expanded(
+                        child: PokemonList(viewModel.pokemonList),
+                      ),
           ],
         ),
       ),

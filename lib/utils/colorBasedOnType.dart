@@ -38,7 +38,7 @@ class ColorBasedOnType {
       case 'normal':
         finalColor = Color(0xFF9DA0AA);
         break;
-      case 'eletric':
+      case 'electric':
         finalColor = Color(0xFFEED535);
         break;
       case 'ice':
@@ -103,7 +103,7 @@ class ColorBasedOnType {
       case 'normal':
         finalColor = Color(0xFFB5B9C4);
         break;
-      case 'eletric':
+      case 'electric':
         finalColor = Color(0xFFF2CB55);
         break;
       case 'ice':

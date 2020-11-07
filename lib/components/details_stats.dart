@@ -14,15 +14,40 @@ class DetailsStats extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
-            "Base Stats",
-            style: TextStyle(
-              color: ColorBasedOnType()
-                  .colorBasedOnType(pokemon.types[0]['type']['name']),
-              fontSize: 18,
-              fontWeight: FontWeight.w600,
+          Padding(
+            padding: const EdgeInsets.only(
+              bottom: 10,
+            ),
+            child: Text(
+              "Base Stats",
+              style: TextStyle(
+                color: ColorBasedOnType()
+                    .colorBasedOnType(pokemon.types[0]['type']['name']),
+                fontSize: 18,
+                fontWeight: FontWeight.w600,
+              ),
             ),
           ),
+          for (var stat in pokemon.stats)
+            Padding(
+              padding: const EdgeInsets.only(
+                bottom: 5,
+                top: 5,
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    stat['stat']['name'][0].toUpperCase() +
+                        stat['stat']['name'].substring(1),
+                    style: TextStyle(
+                      color: Colors.black,
+                    ),
+                  ),
+                  Text(stat['base_stat'].toString()),
+                ],
+              ),
+            ),
         ],
       ),
     );
