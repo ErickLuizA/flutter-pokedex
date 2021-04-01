@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+
+import 'package:pokedex/models/pokemon.dart';
 import 'package:pokedex/utils/colorBasedOnType.dart';
-import 'package:pokedex/view_models/pokemon_view_model.dart';
 
 class DetailsHeader extends StatelessWidget {
-  final PokemonViewModel pokemon;
+  final Pokemon pokemon;
 
   DetailsHeader(this.pokemon);
 
@@ -14,7 +15,7 @@ class DetailsHeader extends StatelessWidget {
       children: [
         Padding(
           padding: const EdgeInsets.only(
-            top: 40,
+            top: 20,
             bottom: 40,
           ),
           child: Row(

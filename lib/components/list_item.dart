@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+
+import 'package:pokedex/models/pokemon.dart';
 import 'package:pokedex/utils/colorBasedOnType.dart';
-import 'package:pokedex/view_models/pokemon_view_model.dart';
 
 class ListItem extends StatelessWidget {
-  final PokemonViewModel pokemon;
+  final Pokemon pokemon;
 
   ListItem(this.pokemon);
 
@@ -85,7 +86,7 @@ class ListItem extends StatelessWidget {
           ),
           trailing: Image.network(
             pokemon.image,
-            width: MediaQuery.of(context).size.width * 0.25,
+            width: MediaQuery.of(context).size.width * 0.20,
             fit: BoxFit.cover,
           ),
         ),

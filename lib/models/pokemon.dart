@@ -10,17 +10,18 @@ class Pokemon {
   String name;
   String image;
 
-  Pokemon(
-      {this.types,
-      this.forms,
-      this.abilities,
-      this.stats,
-      this.species,
-      this.experience,
-      this.weight,
-      this.height,
-      this.name,
-      this.image});
+  Pokemon({
+    required this.types,
+    required this.forms,
+    required this.abilities,
+    required this.stats,
+    required this.species,
+    required this.experience,
+    required this.weight,
+    required this.height,
+    required this.name,
+    required this.image,
+  });
 
   factory Pokemon.fromJson(Map<String, dynamic> json) {
     return Pokemon(

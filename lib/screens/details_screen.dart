@@ -1,23 +1,22 @@
 import 'package:flutter/material.dart';
+
+import 'package:pokedex/models/pokemon.dart';
+import 'package:pokedex/utils/colorBasedOnType.dart';
 import 'package:pokedex/components/details_about.dart';
 import 'package:pokedex/components/details_evolution.dart';
 import 'package:pokedex/components/details_header.dart';
 import 'package:pokedex/components/details_stats.dart';
-import 'package:pokedex/utils/colorBasedOnType.dart';
-import 'package:pokedex/view_models/pokemon_view_model.dart';
 
-class PokemonDetails extends StatefulWidget {
-  @override
-  _PokemonDetailsState createState() => _PokemonDetailsState();
-}
+class DetailsScreen extends StatelessWidget {
+  final Pokemon pokemon;
 
-class _PokemonDetailsState extends State<PokemonDetails>
-    with TickerProviderStateMixin {
+  const DetailsScreen({
+    Key? key,
+    required this.pokemon,
+  }) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-    final args = (ModalRoute.of(context).settings.arguments as Map);
-    PokemonViewModel pokemon = args['pokemon'];
-
     return Scaffold(
       appBar: AppBar(
         elevation: 0,

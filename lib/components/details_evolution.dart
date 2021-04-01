@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+
+import 'package:pokedex/models/pokemon.dart';
 import 'package:pokedex/utils/colorBasedOnType.dart';
-import 'package:pokedex/view_models/pokemon_view_model.dart';
 
 class DetailsEvolution extends StatelessWidget {
-  final PokemonViewModel pokemon;
+  final Pokemon pokemon;
 
   DetailsEvolution(this.pokemon);
 
