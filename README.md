@@ -31,8 +31,6 @@
   <a href="#framed_picture-screenshots">Screenshots</a>
 </p>
 
-> Under construction
-
 ## :clipboard: Description
 
 Pokedex is a app built with flutter based on the dev challenge 
@@ -91,9 +89,6 @@ $ flutter run
 
 ## :information_source: TODO
   - Evolution Tab
-  - Set svg patterns
-  - Add more filters 
-  - Implement tests
 
 
 This project is under the MIT license. See the file [LICENSE](LICENSE) for more details.
