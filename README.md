@@ -1,7 +1,3 @@
-<p align="center"> 
-  <img alt="Pokedex icon" src="./assets/patterns/pokeball.svg"  width="280"/>
-</p>
-
 <h1 align="center"> Pokedex </h1>
 
 <p align="center">
@@ -33,7 +29,7 @@
 
 ## :clipboard: Description
 
-Pokedex is a app built with flutter based on the dev challenge 
+Pokedex is a pokedex app built with flutter based on the dev challenge 
 https://bit.ly/2IdKYqB
 
 ## :building_construction: Technologies
@@ -89,6 +85,7 @@ $ flutter run
 
 ## :information_source: TODO
   - Evolution Tab
+  - Design fix
 
 
 This project is under the MIT license. See the file [LICENSE](LICENSE) for more details.
