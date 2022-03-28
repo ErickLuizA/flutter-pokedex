@@ -1,7 +1,7 @@
-<h1 align="center"> Pokedex </h1>
+<h1 align="center"> flutter-pokedex </h1>
 
 <p align="center">
-  <a href="https://github.com/ErickLuizA/Pokedex/graphs/commit-activity" alt="Maintenance">
+  <a href="https://github.com/ErickLuizA/flutter-pokedex/graphs/commit-activity" alt="Maintenance">
     <img src="https://img.shields.io/badge/Maintained%3F-yes-1EAE72.svg" />
   </a>
 
@@ -11,12 +11,12 @@
 
 <br/>
 
-<img alt="GitHub language count" src="https://img.shields.io/github/languages/count/ErickLuizA/Pokedex?color=blue">
+<img alt="GitHub language count" src="https://img.shields.io/github/languages/count/ErickLuizA/flutter-pokedex?color=blue">
 
-<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/ErickLuizA/Pokedex">
+<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/ErickLuizA/flutter-pokedex">
 
-<a href="https://github.com/ErickLuizA/Pokedex/stargazers">
-  <img alt="GitHub stars" src="https://img.shields.io/github/stars/ErickLuizA/Pokedex?style=social">
+<a href="https://github.com/ErickLuizA/flutter-pokedex/stargazers">
+  <img alt="GitHub stars" src="https://img.shields.io/github/stars/ErickLuizA/flutter-pokedex?style=social">
 </a>
 
 <p align="center">
@@ -29,7 +29,7 @@
 
 ## :clipboard: Description
 
-Pokedex is a pokedex app built with flutter based on the dev challenge 
+flutter-pokedex is a sample app built with flutter based on the dev challenge
 https://bit.ly/2IdKYqB
 
 ## :building_construction: Technologies
@@ -44,21 +44,21 @@ https://bit.ly/2IdKYqB
 ## 1. Download the repository
 
 ```shell
- $ git clone https://github.com/ErickLuizA/Pokedex.git
-  
-  or 
+ $ git clone https://github.com/ErickLuizA/flutter-pokedex.git
 
- $ gh repo clone ErickLuizA/Pokedex
+  or
+
+ $ gh repo clone ErickLuizA/flutter-pokedex
 ```
 
 ## 2. Installation
 
 ```shell
 # Go into the repository
-$ cd Pokedex
+$ cd flutter-pokedex
 
 # Install dependencies
-$ flutter pub get 
+$ flutter pub get
 
 # or just use your IDE
 ```
@@ -76,17 +76,17 @@ $ flutter run
 ## :framed_picture: Screenshots
 
 <div>
-  <img alt="Pokedex icon" src="./.github/Home.png"  width="200"/>
-  <img alt="Pokedex icon" src="./.github/Search.png"  width="200"/>
-  <img alt="Pokedex icon" src="./.github/Filter.png"  width="200"/>
-  <img alt="Pokedex icon" src="./.github/Sort.png"  width="200"/>
-  <img alt="Pokedex icon" src="./.github/Details.png"  width="200"/>
+  <img alt="flutter-pokedex icon" src="./.github/Home.png"  width="200"/>
+  <img alt="flutter-pokedex icon" src="./.github/Search.png"  width="200"/>
+  <img alt="flutter-pokedex icon" src="./.github/Filter.png"  width="200"/>
+  <img alt="flutter-pokedex icon" src="./.github/Sort.png"  width="200"/>
+  <img alt="flutter-pokedex icon" src="./.github/Details.png"  width="200"/>
 </div>
 
 ## :information_source: TODO
-  - Evolution Tab
-  - Design fix
 
+- Evolution Tab
+- Design fix
 
 This project is under the MIT license. See the file [LICENSE](LICENSE) for more details.
 
